@@ -12,7 +12,7 @@ const Options = ({setInfoFromOptions}) => {
  
     
     return ( 
-        <div className="mx-auto p-4 mt-4 bg-sky-300 w-[70%] mb-10 border-2 border-sky-700 h-[400px] rounded-3xl flex flex-col items-center"> 
+        <div className="mx-auto p-4 mt-4 bg-gray-500 w-[70%] mb-10 border-2 border-sky-700 h-[400px] rounded-3xl flex flex-col items-center"> 
             <div className="text-3xl font-bold">Options</div> 
             <p>Lorem, ipsum dolor.</p> 
  

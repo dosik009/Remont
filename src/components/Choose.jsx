@@ -6,6 +6,7 @@ import Footer from "./Footer";
 const Choose = () => { 
      
     const apikey = import.meta.env.VITE_API_KEY; 
+    const apiurl = import.meta.env.VITE_API_URL; 
      
     const [infoFromOptions ,setInfoFromOptions] = useState(); 
  
@@ -18,6 +19,10 @@ const Choose = () => {
         { name: "curtains", imageSrc: "/images/shtora.png" }, 
         { name: "sofa", imageSrc: "/images/png.png" }, 
         { name: "padded stool", imageSrc: "/images/png5.png" }, 
+        { name: "", imageSrc: "/images/tumba.png" }, 
+        { name: "carpet", imageSrc: "/images/gpt3.png" }, 
+        { name: "sofa", imageSrc: "/images/png1.png" }, 
+        { name: "padded stool", imageSrc: "/images/pk.png" }, 
     ]; 
  
     const createPromptText = () => { 
@@ -70,7 +75,7 @@ const Choose = () => {
                     /> 
                 ))} 
                 <div> 
-                    <h3>Selected Ingredients:</h3> 
+                    <h3></h3> 
                     <ul> 
                         {gptPromptText.map((ingredient, index) => ( 
                             <li key={index}>{ingredient}</li> 
